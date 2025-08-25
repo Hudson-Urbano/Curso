@@ -1,15 +1,23 @@
 public class DataTeste {
     public static void main(String[] args) {
 
-    Data nascimeData = new Data();
+    Data d1 = new Data();
 
-    nascimeData.dia = 31;
-    nascimeData.mes = "Janeiro - 01";
-    nascimeData.ano = 2005;
+    d1.dia = 31;
+    d1.mes = 01;
+    d1.ano = 2005;
 
-    System.out.println("O dia do seu nascimento é: " + nascimeData.dia);
-    System.out.println("O mês do seu nascimento é: " + nascimeData.mes);
-    System.out.println("O ano do seu nascimento é: " + nascimeData.ano);
+    var d2 = new Data();
+    d2.dia = 27;
+    d2.mes = 07;
+    d2.ano = 2004;
+
+    System.out.printf(d1.obterDataInformada());
+    System.out.printf(d2.obterDataInformada());
+
+    d1.DataInformada();
+    d2.DataInformada();
+
     }
 
 }
