@@ -3,17 +3,12 @@ public class DataTeste {
 
     Data d1 = new Data();
 
-    d1.dia = 31;
-    d1.mes = 01;
-    d1.ano = 2005;
-
-    var d2 = new Data();
-    d2.dia = 27;
-    d2.mes = 07;
-    d2.ano = 2004;
+    var d2 = new Data(27, 07, 2004);
 
     System.out.printf(d1.obterDataInformada());
+    System.out.println(" ");
     System.out.printf(d2.obterDataInformada());
+    System.out.println(" ");
 
     d1.DataInformada();
     d2.DataInformada();
